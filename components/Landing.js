@@ -1,4 +1,6 @@
 import styles from '../styles/Landing.module.scss';
+import dynamic from 'next/dynamic';
+const ParticlesBg = dynamic(() => import('particles-bg'), { ssr: false });
 
 export default function Landing() {
     return (
@@ -18,6 +20,7 @@ export default function Landing() {
                     <h2>March 12th, 2022</h2>
                 </div>
             </div>
+            <ParticlesBg color="#aaaaaa" num={50} type="cobweb" bg={true} />
         </section>
     );
 }
