@@ -1,0 +1,24 @@
+@use './vars.scss';
+
+.main-logo {
+    width: 400px;
+}
+
+.main-title {
+    margin-top: 30px;
+    text-align: center;
+    h1 {
+        color: white;
+        font-weight: 400;
+        font-size: 50pt;
+        span {
+            font-weight: 800;
+        }
+    }
+    h2 {
+        margin-top: 0.5em;
+        font-size: 30pt;
+        // font-style: italic;
+        font-weight: 200;
+    }
+}
