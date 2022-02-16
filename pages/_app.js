@@ -1,7 +1,6 @@
 import '../styles/app.scss';
 
 // TODO: navbar
-// TODO; animation in the background
 function MyApp({ Component, pageProps }) {
     return (
         <>

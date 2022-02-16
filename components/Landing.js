@@ -4,23 +4,34 @@ const ParticlesBg = dynamic(() => import('particles-bg'), { ssr: false });
 
 export default function Landing() {
     return (
-        <section className="flex-center">
-            <div>
+        <heading className="flex-center">
+            <div className={styles['wrapper']}>
                 <div className="flex-center">
                     <img
-                        className={styles['main-logo']}
+                        className={styles['logo']}
                         src="/images/logo-big.png"
                         alt=""
                     />
                 </div>
-                <div className={styles['main-title']}>
+                <div className={styles['title']}>
                     <h1>
                         McGill AI <span>Learnathon</span>
                     </h1>
-                    <h2>March 12th, 2022</h2>
+                    <h2>March 12th, 2022 &nbsp;&bull;&nbsp; 8 AM - 7 PM</h2>
+                </div>
+                <div className="flex-center">
+                    {/* TODO: need this button to not be absolute positioned, or play better with the other elements */}
+                    <button
+                        className={styles['button']}
+                        onClick={() =>
+                            window.open('https://forms.gle/mCptYjgHTsJ4RMKt6')
+                        }
+                    >
+                        Register
+                    </button>
                 </div>
             </div>
             <ParticlesBg color="#aaaaaa" num={50} type="cobweb" bg={true} />
-        </section>
+        </heading>
     );
 }
