@@ -12,14 +12,17 @@ const infoThings = [
                 sponsor track with more industry focused talks.
             </>
         ),
+        icon: '/images/icons/calendar.png',
     },
     {
         title: 'Engaging Panels',
         text: 'We will host moderated panels on topics such as securing research as an undergraduate and emerging AI start-ups',
+        icon: '/images/icons/people.png',
     },
     {
         title: 'Career Advancement',
         text: '1:1 networking with other attendees, speakers and sponsors',
+        icon: '/images/icons/briefcase.png',
     },
 ];
 
@@ -39,6 +42,9 @@ export default function Info() {
             <div className={`flex-center ${styles['info']}`}>
                 {infoThings.map((info) => (
                     <div className={styles['info__thing']}>
+                        <div className="flex-center">
+                            <img src={info.icon} alt="" />
+                        </div>
                         <h3>{info.title}</h3>
                         <p>{info.text}</p>
                     </div>
