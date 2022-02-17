@@ -17,6 +17,7 @@ export default function Landing() {
                     <h1>
                         McGill AI <span>Learnathon</span>
                     </h1>
+                    {/* TODO: make sure the time is right */}
                     <h2>March 12th, 2022 &nbsp;&bull;&nbsp; 8 AM - 7 PM</h2>
                 </div>
                 <div className="flex-center">

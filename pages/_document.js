@@ -6,7 +6,6 @@ class MyDocument extends Document {
         return (
             <Html>
                 <Head>
-                    <title>McGill AI Learnathon</title>
                     <meta name="title" content="McGill AI Learnathon" />
                     <meta
                         name="description"
@@ -43,6 +42,7 @@ class MyDocument extends Document {
                     />
                     {/* <meta property="twitter:image" content={imagePath} /> */}
 
+                    <link rel="shortcut icon" href="/meta/favicon.ico" />
                     <link
                         rel="apple-touch-icon"
                         sizes="180x180"
@@ -60,6 +60,7 @@ class MyDocument extends Document {
                         sizes="16x16"
                         href="/meta/favicon-16x16.png"
                     />
+                    <link rel="manifest" href="/site.webmanifest" />
                     <meta name="theme-color" content="#ffffff" />
                     <meta
                         name="keywords"
