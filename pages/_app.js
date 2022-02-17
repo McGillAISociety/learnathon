@@ -1,5 +1,6 @@
 import Head from 'next/head';
 import '../styles/app.scss';
+import Footer from '../components/Footer';
 
 // TODO: navbar
 function MyApp({ Component, pageProps }) {
@@ -10,6 +11,7 @@ function MyApp({ Component, pageProps }) {
             </Head>
             <div id="background" />
             <Component {...pageProps} />
+            <Footer />
         </>
     );
 }
