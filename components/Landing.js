@@ -20,11 +20,10 @@ export default function Landing() {
                     <h2>March 12th, 2022 &nbsp;&bull;&nbsp; 8 AM - 7 PM</h2>
                 </div>
                 <div className="flex-center">
-                    {/* TODO: need this button to not be absolute positioned, or play better with the other elements */}
                     <button
                         className={styles['button']}
                         onClick={() =>
-                            window.open('https://forms.gle/mCptYjgHTsJ4RMKt6')
+                            window.open('https://forms.gle/QxT29mK4Va5pJiHp9')
                         }
                     >
                         Register
