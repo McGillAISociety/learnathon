@@ -28,8 +28,9 @@ const infoThings = [
         text: (
             <>
                 Though the Hopin online platform, there will be ample
-                opportunity to network! What's more, the conference will wrap up
-                with an <b>AI career fair</b>!
+                opportunity to meet others with an interest in AI! What's more,
+                the conference will wrap up with a <b>1:1 networking session</b>
+                !
             </>
         ),
         icon: '/images/icons/briefcase.png',
