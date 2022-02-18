@@ -3,7 +3,7 @@ import styles from '../styles/Info.module.scss';
 // TODO: work more on these
 const infoThings = [
     {
-        title: 'A full day of ML',
+        title: 'A day of AI for everyone',
         text: (
             <>
                 Our day-long program consistings of a <b>beginner track</b> with
@@ -15,12 +15,12 @@ const infoThings = [
         icon: '/images/icons/calendar.png',
     },
     {
-        title: 'Engaging Panels',
-        text: 'We will host moderated panels on topics such as securing research as an undergraduate and emerging AI start-ups',
+        title: 'Expert Speakers',
+        text: 'Industry and research leaders will host a range of technical talks and moderated panels.',
         icon: '/images/icons/people.png',
     },
     {
-        title: 'Career Advancement',
+        title: 'Career Opportunities',
         text: '1:1 networking with other attendees, speakers and sponsors',
         icon: '/images/icons/briefcase.png',
     },
@@ -40,8 +40,8 @@ export default function Info() {
                 other like-minded students! Registration includes the following:
             </p>
             <div className={`flex-center ${styles['info']}`}>
-                {infoThings.map((info) => (
-                    <div className={styles['info__thing']}>
+                {infoThings.map((info, index) => (
+                    <div className={styles['info__thing']} key={index}>
                         <div className="flex-center">
                             <img src={info.icon} alt="" />
                         </div>
