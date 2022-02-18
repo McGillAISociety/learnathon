@@ -2,7 +2,6 @@ import Document, { Html, Head, Main, NextScript } from 'next/document';
 
 class MyDocument extends Document {
     render() {
-        // TODO: the image
         return (
             <Html>
                 <Head>
@@ -22,7 +21,7 @@ class MyDocument extends Document {
                         property="og:description"
                         content="An undergraduate AI research conference"
                     />
-                    {/* <meta property="og:image" content={imagePath} /> */}
+                    <meta property="og:image" content="/meta/banner.png" />
 
                     <meta
                         property="twitter:card"
@@ -40,7 +39,7 @@ class MyDocument extends Document {
                         property="twitter:description"
                         content="An undergraduate AI research conference"
                     />
-                    {/* <meta property="twitter:image" content={imagePath} /> */}
+                    <meta property="twitter:image" content="/meta/banner.png" />
 
                     <link rel="shortcut icon" href="/meta/favicon.ico" />
                     <link

@@ -2,7 +2,7 @@ import Head from 'next/head';
 import '../styles/app.scss';
 import Footer from '../components/Footer';
 
-// TODO: navbar
+// TODO: navbar (including MAIS logo)
 function MyApp({ Component, pageProps }) {
     return (
         <>

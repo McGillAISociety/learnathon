@@ -5,7 +5,8 @@ import Schedule from '../components/Schedule';
 import FAQ from '../components/FAQ';
 import Sponsors from '../components/Sponsors';
 
-// TODO: make the blue background borders at an angle, like last year's site
+// TODO: make the blue background borders at an angle, like last year's site?
+// TODO: implement speakers and schedule
 export default function Index() {
     return (
         <>
