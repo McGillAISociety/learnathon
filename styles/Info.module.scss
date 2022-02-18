@@ -2,10 +2,11 @@
     padding-top: 40px;
     align-items: flex-start;
     &__thing {
+        padding: 0 5vw 0 5vw;
         img {
             height: 225px;
             margin-bottom: 40px;
         }
-        width: 400px;
+        width: 425px;
     }
 }
