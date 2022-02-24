@@ -1,0 +1,42 @@
+@use './vars.scss';
+
+.speakers {
+    align-items: flex-start;
+    // flex-wrap: nowrap;
+    // overflow-x: scroll;
+    width: 1200px;
+    // height: 1000px;
+}
+
+.speaker {
+    // display: flex;
+    // flex-direction: column;
+    // justify-content: space-between;
+    width: 350px;
+    height: 100%;
+    // min-width: 600px;
+    // height: 100%;
+    padding: 20px;
+    img {
+        // height: 300px;
+        width: 100%;
+        border-radius: 10px;
+        margin: 10px;
+    }
+    h4,
+    h5 {
+        text-align: center;
+        margin-bottom: 5px;
+    }
+    h5 {
+        font-size: medium;
+        font-weight: 300;
+    }
+    p {
+        font-size: medium;
+        margin: 0;
+    }
+    background-color: vars.$blue-background;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}

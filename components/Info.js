@@ -45,11 +45,10 @@ export default function Info() {
                 Join some of the most curious students and acclaimed AI
                 researchers in Montreal for a <b>6-hour virtual conference</b>.
                 The McGill AI Society has organized a series of talks and events
-                in the form of a conference, open to interested, curious, and
-                ambitious students ranging from high school to the graduate
-                level, completely <b>free of charge</b>! Come learn about AI and
-                meet other like-minded students! Registration includes the
-                following:
+                open to interested, curious, and ambitious students ranging from
+                high school to the graduate level, completely{' '}
+                <b>free of charge</b>! Come learn about AI and meet other
+                like-minded students! Registration includes the following:
             </p>
             <div className={`flex-center ${styles['info']}`}>
                 {infoThings.map((info, index) => (

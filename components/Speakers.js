@@ -1,5 +1,92 @@
 import styles from '../styles/Speakers.module.scss';
 
+// failed attempt to use a component libary: https://codesandbox.io/s/react-horizontal-scrolling-menu-v2-basic-example-swg0y?file=/src/index.tsx
+// import React from 'react';
+// import { ScrollMenu, VisibilityContext } from 'react-horizontal-scrolling-menu';
+
+// import {
+//     BsFillArrowLeftSquareFill,
+//     BsFillArrowRightSquareFill,
+// } from 'react-icons/bs';
+
+// function Arrow({ children, disabled, onClick }) {
+//     return (
+//         <button
+//             disabled={disabled}
+//             onClick={onClick}
+//             style={{
+//                 cursor: 'pointer',
+//                 display: 'flex',
+//                 flexDirection: 'column',
+//                 justifyContent: 'center',
+//                 right: '1%',
+//                 opacity: disabled ? '0' : '1',
+//                 userSelect: 'none',
+//             }}
+//         >
+//             {children}
+//         </button>
+//     );
+// }
+
+// function LeftArrow() {
+//     const {
+//         isFirstItemVisible,
+//         scrollPrev,
+//         visibleItemsWithoutSeparators,
+//         initComplete,
+//     } = React.useContext(VisibilityContext);
+
+//     const [disabled, setDisabled] = React.useState(
+//         !initComplete || (initComplete && isFirstItemVisible)
+//     );
+//     React.useEffect(() => {
+//         if (visibleItemsWithoutSeparators.length) {
+//             setDisabled(isFirstItemVisible);
+//         }
+//     }, [isFirstItemVisible, visibleItemsWithoutSeparators]);
+
+//     return (
+//         <Arrow disabled={disabled} onClick={() => scrollPrev()}>
+//             <BsFillArrowLeftSquareFill size={50} color="white" />
+//         </Arrow>
+//     );
+// }
+
+// function RightArrow() {
+//     const { isLastItemVisible, scrollNext, visibleItemsWithoutSeparators } =
+//         React.useContext(VisibilityContext);
+//     const [disabled, setDisabled] = React.useState(
+//         !visibleItemsWithoutSeparators.length && isLastItemVisible
+//     );
+//     React.useEffect(() => {
+//         if (visibleItemsWithoutSeparators.length) {
+//             setDisabled(isLastItemVisible);
+//         }
+//     }, [isLastItemVisible, visibleItemsWithoutSeparators]);
+
+//     return (
+//         <Arrow disabled={disabled} onClick={() => scrollNext()}>
+//             <BsFillArrowRightSquareFill />
+//         </Arrow>
+//     );
+// }
+
+// function onWheel(apiObj, ev) {
+//     const isThouchpad = Math.abs(ev.deltaX) !== 0 || Math.abs(ev.deltaY) < 15;
+
+//     if (isThouchpad) {
+//         ev.stopPropagation();
+//         return;
+//     }
+
+//     if (ev.deltaY < 0) {
+//         apiObj.scrollNext();
+//     } else if (ev.deltaY > 0) {
+//         apiObj.scrollPrev();
+//     }
+// }
+
 const speakers = [
     {
         name: 'Reihaneh Rabbany',
@@ -35,14 +122,21 @@ export default function Speakers() {
     return (
         <section>
             <h2>Speakers</h2>
-            {/* {speakers.map((speaker, index) => (
-                <div>
-                    <h4>{speaker.name}</h4>
-                    <h5>{speaker.subheading}</h5>
-                    <p>{speaker.description}</p>
-                    <img src={speaker.image} alt={speaker.name} />
+            <div className="flex-center">
+                <div className={`flex-center ${styles['speakers']}`}>
+                    {speakers.map((speaker, index) => (
+                        <div className={styles['speaker']} key={index}>
+                            <h4>{speaker.name}</h4>
+                            <h5>{speaker.subheading}</h5>
+                            <img src={speaker.image} alt={speaker.name} />
+                            <p>{speaker.description}</p>
+                        </div>
+                    ))}
                 </div>
-            ))} */}
+            </div>
+            <center>
+                <small>...and more to come!</small>
+            </center>
         </section>
     );
 }

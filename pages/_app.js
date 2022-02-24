@@ -3,6 +3,7 @@ import '../styles/app.scss';
 import Footer from '../components/Footer';
 
 // TODO: navbar (including MAIS logo)
+// or, at the least, a "jump to speakers" button
 function MyApp({ Component, pageProps }) {
     return (
         <>

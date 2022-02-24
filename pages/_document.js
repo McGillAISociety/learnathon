@@ -37,7 +37,8 @@ class MyDocument extends Document {
                     />
                     <meta
                         property="twitter:description"
-                        content="An undergraduate AI research conference"
+                        content="An undergraduate AI research conference. Join some of the most curious students and acclaimed AI
+                        researchers in Montreal."
                     />
                     <meta property="twitter:image" content="/meta/banner.png" />
 
