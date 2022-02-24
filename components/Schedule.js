@@ -1,3 +1,7 @@
 export default function Schedule() {
-    return <></>;
+    return (
+        <section>
+            <h2>Schedule</h2>
+        </section>
+    );
 }

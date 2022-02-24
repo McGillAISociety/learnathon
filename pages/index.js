@@ -15,14 +15,13 @@ export default function Index() {
                 <Info />
             </div>
             <Speakers />
-            {/* TODO: when the other things are implemented, properly change the alternating blue bg */}
-            {/* <div className="blue-bg">
-                <Schedule />
-            </div> */}
             <div className="blue-bg">
-                <FAQ />
+                <Schedule />
             </div>
-            <Sponsors />
+            <FAQ />
+            <div className="blue-bg">
+                <Sponsors />
+            </div>
         </>
     );
 }
