@@ -99,7 +99,7 @@ const speakers = [
         name: 'Bang Liu',
         subheading: 'NLP, Data Mining',
         description:
-            'Bang Liu is a Canada CIFAR AI Chair at Mila. He is an assistant professor in the Department of Computer Science and Operations Research (DIRO) at the University of Montreal. His research interests primarily lie in the areas of natural language processing (NLP), data mining, multimodal and multitask learning, AI + X (e.g., animation, VR, health). ',
+            'Bang Liu is an Assistant Professor in the Department of Computer Science and Operations Research (DIRO) at the University of Montreal. He is a core member of the RALI laboratory (Applied Research in Computer Linguistics) of DIRO, an associate member of Mila, and a Canada CIFAR AI Chair. He researches natural language processing and understanding, text mining, and AI applications in different fields. His innovations have been deployed in real-world applications serving over a billion daily active users and he has published 30+ papers on top conferences and journals.',
         image: '/images/speakers/liu.png',
     },
     {
@@ -116,6 +116,13 @@ const speakers = [
             "ProjectX is an annual machine learning competition with institutions like Yale, Cornell, UBC and more. This year's theme being healthcare, the McGill team won first place for their paper on applying deep reinforcement learning to improve mechanical ventilation! They will be giving a short talk about their project and answering your questions about how to get involved in AI research as an undergrad.",
         image: '/images/speakers/projectx.png',
     },
+    // {
+    //     name: 'AI Start-up Panel Discussion',
+    //     subheading: 'AI based ventures and commercialization',
+    //     description:
+    //         'Curious about the emerging business applications of AI? Hear from various speakers involved in different stages of AI/tech related startups: from founding a startup, consulting for startups and venture management. Be sure to come with questions as Martin, Collins and George are here to answer all things start-up related!',
+    //     image: '/images/speakers/startup.png',
+    // },
 ];
 
 export default function Speakers() {
@@ -135,7 +142,7 @@ export default function Speakers() {
                 </div>
             </div>
             <center>
-                <small>...and more to come!</small>
+                <small>...and more!</small>
             </center>
         </section>
     );
