@@ -116,13 +116,13 @@ const speakers = [
             "ProjectX is an annual machine learning competition with institutions like Yale, Cornell, UBC and more. This year's theme being healthcare, the McGill team won first place for their paper on applying deep reinforcement learning to improve mechanical ventilation! They will be giving a short talk about their project and answering your questions about how to get involved in AI research as an undergrad.",
         image: '/images/speakers/projectx.png',
     },
-    // {
-    //     name: 'AI Start-up Panel Discussion',
-    //     subheading: 'AI based ventures and commercialization',
-    //     description:
-    //         'Curious about the emerging business applications of AI? Hear from various speakers involved in different stages of AI/tech related startups: from founding a startup, consulting for startups and venture management. Be sure to come with questions as Martin, Collins and George are here to answer all things start-up related!',
-    //     image: '/images/speakers/startup.png',
-    // },
+    {
+        name: 'AI Start-up Panel Discussion',
+        subheading: 'AI based ventures and commercialization',
+        description:
+            'Curious about the emerging business applications of AI? Hear from various speakers involved in different stages of AI/tech related startups: from founding a startup, consulting for startups and venture management. Be sure to come with questions as Martin, Collins and George are here to answer all things start-up related!',
+        image: '/images/speakers/startup.png',
+    },
 ];
 
 export default function Speakers() {
