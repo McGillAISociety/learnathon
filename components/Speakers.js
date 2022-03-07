@@ -106,7 +106,7 @@ const speakers = [
         name: 'Brennan Nichyporuk',
         subheading: 'Deep Learning for Medical Image Analysis',
         description:
-            "Research Scientist, MILA; External Collaborator with McGill's Probabilistic Vision Group, a part of the McGill Centre for Intelligent machines. The focus of the group’s research is on developing probabilistic inference techniques for computer vision problems.",
+            "Research Scientist, MILA; External Collaborator with McGill's Probabilistic Vision Group, a part of the McGill Centre for Intelligent machines. The focus of the group’s research is on developing developing deep learning techniques for medical image analysis.",
         image: '/images/speakers/nichyporuk.png',
     },
     {
