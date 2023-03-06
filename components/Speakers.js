@@ -1,4 +1,5 @@
 import styles from '../styles/Speakers.module.scss';
+import React, { useState } from "react";
 
 // failed attempt to use a component libary: https://codesandbox.io/s/react-horizontal-scrolling-menu-v2-basic-example-swg0y?file=/src/index.tsx
 // import React from 'react';
@@ -89,41 +90,35 @@ import styles from '../styles/Speakers.module.scss';
 
 const speakers = [
     {
-        name: 'Reihaneh Rabbany',
-        subheading: 'Network Science, Data Mining',
-        description:
-            'Reihaneh is an Assistant Professor at the School of Computer Science, McGill University. Her research is at the intersection of network science, data mining and machine learning, with a focus on analyzing real-world interconnected data, and social good applications.',
-        image: '/images/speakers/rabbany.png',
-    },
-    {
         name: 'Bang Liu',
-        subheading: 'NLP, Data Mining',
+        subheading: 'Talk is Not Cheap, Hand Me the Tools: Augmenting Language Models with Tools for More Effective Problem-Solving',
         description:
-            'Bang Liu is an Assistant Professor in the Department of Computer Science and Operations Research (DIRO) at the University of Montreal. He is a core member of the RALI laboratory (Applied Research in Computer Linguistics) of DIRO, an associate member of Mila, and a Canada CIFAR AI Chair. He researches natural language processing and understanding, text mining, and AI applications in different fields. His innovations have been deployed in real-world applications serving over a billion daily active users and he has published 30+ papers on top conferences and journals.',
+            'Bang Liu is an Assistant Professor in the Department of Computer Science and Operations Research (DIRO) at the University of Montreal. He is a core member of the RALI laboratory (Applied Research in Computer Linguistics) of DIRO, an associate member of Mila – Quebec Artificial Intelligence Institute, and a Canada CIFAR AI (CCAI) Chair. His research interests primarily lie in the areas of natural language processing (NLP), multimodal and embodied learning, and AI + X (e.g, material science, health). ',
+        eventDescription:
+            'Large language models have garnered significant attention in recent years for their remarkable capabilities. However, while language models have proven to be useful in various applications, they often fall short when it comes to complex tasks like mathematical problem-solving. In this talk, we will delve into recent research that combines language models with external tools to address this limitation. Our discussion will center on the potential benefits of this approach, and how it could open up new avenues for language models to be applied in professional settings.',
         image: '/images/speakers/liu.png',
     },
-    {
-        name: 'Brennan Nichyporuk',
-        subheading: 'Deep Learning for Medical Image Analysis',
-        description:
-            "Research Scientist, MILA; External Collaborator with McGill's Probabilistic Vision Group, a part of the McGill Centre for Intelligent machines. The focus of the group’s research is on developing deep learning techniques for medical image analysis.",
-        image: '/images/speakers/nichyporuk.png',
-    },
-    {
-        name: 'McGill ProjectX Team',
-        subheading: 'Healthcare Applications, Reinforcement Learning',
-        description:
-            "ProjectX is an annual machine learning competition with institutions like Yale, Cornell, UBC and more. This year's theme being healthcare, the McGill team won first place for their paper on applying deep reinforcement learning to improve mechanical ventilation! They will be giving a short talk about their project and answering your questions about how to get involved in AI research as an undergrad.",
-        image: '/images/speakers/projectx.png',
-    },
-    {
-        name: 'AI Start-up Panel Discussion',
-        subheading: 'AI based ventures and commercialization',
-        description:
-            'Curious about the emerging business applications of AI? Hear from various speakers involved in different stages of AI/tech related startups: from founding a startup, consulting for startups and venture management. Be sure to come with questions as Martin, Collins and George are here to answer all things start-up related!',
-        image: '/images/speakers/startup.png',
-    },
 ];
+
+const ReadMore = ({ children }) => {
+    const text = children;
+    const [isReadMore, setIsReadMore] = useState(true);
+    const toggleReadMore = () => {
+      setIsReadMore(!isReadMore);
+    };
+    return (
+      <p className="text">
+        
+        {isReadMore ? text.slice(0, 150) : text}
+        <span onClick={toggleReadMore} className={`${styles['readMore']}`}>
+        <strong>
+          {isReadMore ? "...read more" : " show less"}
+          </strong>
+        </span>
+        
+      </p>
+    );
+  };
 
 export default function Speakers() {
     return (
@@ -131,22 +126,30 @@ export default function Speakers() {
             <h2>Speakers</h2>
             
             <div className="flex-center">
-                {/*<div className={`flex-center ${styles['speakers']}`}>
+                <div className={`flex-center ${styles['speakers']}`}>
                     {speakers.map((speaker, index) => (
                         <div className={styles['speaker']} key={index}>
                             <h4>{speaker.name}</h4>
-                            <h5>{speaker.subheading}</h5>
+                            <h5><strong>Event Title: </strong>{speaker.subheading} </h5>
                             <img src={speaker.image} alt={speaker.name} />
-                            <p>{speaker.description}</p>
+                            <p><strong>Speaker Description: </strong>
+                                <ReadMore>
+                                    {speaker.description}
+                                </ReadMore>
+                            </p>
+                            <p>
+                                <strong>Event Description: </strong>
+                                <ReadMore>
+                                    {speaker.eventDescription}
+                                </ReadMore>
+                            </p> 
                         </div>
                     ))}
                     </div>
-                */}
-                <p>Information about speakers to come soon!</p>
             </div>
-            {/*<center>
-                <small>...and more!</small>
-            </center>*/}
+            <center>
+                <small>...and many more coming soon!</small>
+            </center>
         </section>
     );
 }

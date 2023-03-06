@@ -5,10 +5,8 @@ const infoThings = [
         title: 'AI for everyone',
         text: (
             <>
-                Our day-long program has a <b>beginner track</b> with talks
-                focused on introductory AI concepts, an <b>advanced track</b>{' '}
-                for specialized topics as well as a <b>sponsor track</b> with
-                industry-focused talks.
+                Our day-long program will have talks
+                focused on a variety of AI concepts, from introductory to specialized topics.
             </>
         ),
         icon: '/images/icons/calendar.png',
@@ -23,7 +21,7 @@ const infoThings = [
         ),
         icon: '/images/icons/people.png',
     },
-    {
+    /*{
         title: 'Career Opportunities',
         text: (
             <>
@@ -34,7 +32,7 @@ const infoThings = [
             </>
         ),
         icon: '/images/icons/briefcase.png',
-    },
+    },*/
 ];
 
 export default function Info() {
