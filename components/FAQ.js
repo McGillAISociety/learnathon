@@ -8,7 +8,7 @@ const FAQs = [
     },
     {
         question: 'Is this a virtual event?',
-        answer: "Unfortunately, due to the pandemic, the learnathon will be online again this year (hopefully for the last time). We will be using the Hoppin platform. No matter the format, we have a truly incredible slate of programming that you won't want to miss!",
+        answer: "The learnathon will be online again this year. No matter the format, we have a truly incredible slate of programming that you won't want to miss!",
     },
     {
         question: 'Does the conference cost money?',
