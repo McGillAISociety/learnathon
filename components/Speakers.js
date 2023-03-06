@@ -129,8 +129,9 @@ export default function Speakers() {
     return (
         <section>
             <h2>Speakers</h2>
+            
             <div className="flex-center">
-                <div className={`flex-center ${styles['speakers']}`}>
+                {/*<div className={`flex-center ${styles['speakers']}`}>
                     {speakers.map((speaker, index) => (
                         <div className={styles['speaker']} key={index}>
                             <h4>{speaker.name}</h4>
@@ -139,11 +140,13 @@ export default function Speakers() {
                             <p>{speaker.description}</p>
                         </div>
                     ))}
-                </div>
+                    </div>
+                */}
+                <p>Information about speakers to come soon!</p>
             </div>
-            <center>
+            {/*<center>
                 <small>...and more!</small>
-            </center>
+            </center>*/}
         </section>
     );
 }
