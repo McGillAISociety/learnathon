@@ -17,13 +17,13 @@ export default function Landing() {
                     <h1>
                         McGill AI <span>Learnathon</span>
                     </h1>
-                    <h2>March 12th, 2022 &nbsp;&bull;&nbsp; 9:45 AM - 4 PM</h2>
+                    <h2>March 18th, 2023 &nbsp;&bull;&nbsp; 9:45 AM - 4 PM</h2>
                 </div>
                 <div className="flex-center">
                     <button
                         className={styles['button']}
                         onClick={() =>
-                            window.open('https://forms.gle/QxT29mK4Va5pJiHp9')
+                            window.open('https://docs.google.com/forms/u/1/d/e/1FAIpQLSdF0JgY6FGPNfDaBFv7SeA3RBMKXuKU2NB_S9ecrFOZIeTm9g/viewform')
                         }
                     >
                         Register
