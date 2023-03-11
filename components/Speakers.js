@@ -98,6 +98,24 @@ const speakers = [
             'Large language models have garnered significant attention in recent years for their remarkable capabilities. However, while language models have proven to be useful in various applications, they often fall short when it comes to complex tasks like mathematical problem-solving. In this talk, we will delve into recent research that combines language models with external tools to address this limitation. Our discussion will center on the potential benefits of this approach, and how it could open up new avenues for language models to be applied in professional settings.',
         image: '/images/speakers/liu.png',
     },
+    {
+        name: 'Ziang Xiao',
+        subheading: 'Seeing Us through Machine: Designing and Building AI to Understand Humans',
+        description:
+            'Ziang Xiao is a Post Doc at MSR and an Assistant Professor at the CS department of Johns Hopkins University. Broadly, his work lies in the intersection of HCI, NLP, and Social Psychology. His research is motivated by the fundamental question of understanding human behaviors at scale. His current work aims to generate theories about human-AI interaction and AI-powered research tools for social science studies.',
+        eventDescription:
+            'Many societal issues, such as health care, voting, etc., require decision-makers to study their stakeholders to design interventions or make a policy change. How do we conduct robust, generalizable, and engaging studies about human behavior? In this talk, I will share my vision of the role of AI in the quest to understand humans and how we could approach such a future. I will introduce my work on designing and building conversational AI to conduct engaging surveys and collect high-quality information. I will first demonstrate the effectiveness of conversational AIs in transforming online survey experiences through a field study. Then, I will present a human-in-the-loop framework to create more effective interview chatbots with active listening skills. In the end, I will talk about my future research perspectives on designing and developing human-centered AI to understand humans for social change.',
+        image: '/images/speakers/ziangxiao.jpg',
+    },
+    {
+        name: 'Yue Li',
+        subheading: 'Computational Medicine',
+        description:
+            'Yue Li is a Assistant Professor, School of Computer Science, McGill University. He obtained a PhD degree in Computer Science and Computational Biology at University of Toronto in 2014. Prior to joining McGill, he was a postdoctoral associate at Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT (2015-2018). He is also Canada Research Chair (Tier 2) in Machine learning for Genomics and Healthcare, and an associate member at Mila - Quebec AI Institute.',
+        eventDescription:
+            "Dr. Li's presentation will be an overview of his research, which is focused on developing interpretable probabilistic learning models and deep learning models to model genetic, epigenetic, electronic health record, and single-cell genomic data. Systematically integrating multimodal and longitudinal data has impactful applications in computational medicine including building intelligent clinical recommender systems, forecasting patient health trajectories, personalized polygenic risk predictions, characterizing multi-trait functional genetic mutations, and dissecting cell-type-specific regulatory elements that are underpin complex traits and diseases in human. His program covers three main research areas involving applied machine learning in (1) healthcare and public health, (2) computational genomics, and (3) population genetics.",
+        image: '/images/speakers/yueli.jpeg',
+    },
 ];
 
 const ReadMore = ({ children }) => {
@@ -130,7 +148,7 @@ export default function Speakers() {
                     {speakers.map((speaker, index) => (
                         <div className={styles['speaker']} key={index}>
                             <h4>{speaker.name}</h4>
-                            <h5><strong>Event Title: </strong>{speaker.subheading} </h5>
+                            <h5>{speaker.subheading} </h5>
                             <img src={speaker.image} alt={speaker.name} />
                             <p><strong>Speaker Description: </strong>
                                 <ReadMore>

@@ -6,12 +6,17 @@ const sponsors = [
         name: 'intact',
         url: 'https://careers.intactfc.com/intactinsurance/ca/en',
         imgWidth: 300,}
-    */,
+    ,
     { name: 'cae', url: 'https://www.cae.com/careers/', imgWidth: 200 },
     {
         name: 'squarepoint',
         url: 'https://www.squarepoint-capital.com/',
         imgWidth: 150,
+    },*/
+    {
+        name: 'desjardins',
+        url: 'https://www.squarepoint-capital.com/',
+        imgWidth: 300,
     },
 ];
 
