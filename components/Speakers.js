@@ -109,13 +109,22 @@ const speakers = [
     },
     {
         name: 'Yue Li',
-        subheading: 'Computational Medicine',
+        subheading: 'Deep embedded topic model for single-cell genomic data',
         description:
             'Yue Li is a Assistant Professor, School of Computer Science, McGill University. He obtained a PhD degree in Computer Science and Computational Biology at University of Toronto in 2014. Prior to joining McGill, he was a postdoctoral associate at Computer Science and Artificial Intelligence Laboratory (CSAIL) at MIT (2015-2018). He is also Canada Research Chair (Tier 2) in Machine learning for Genomics and Healthcare, and an associate member at Mila - Quebec AI Institute.',
         eventDescription:
             "Dr. Li's presentation will be an overview of his research, which is focused on developing interpretable probabilistic learning models and deep learning models to model genetic, epigenetic, electronic health record, and single-cell genomic data. Systematically integrating multimodal and longitudinal data has impactful applications in computational medicine including building intelligent clinical recommender systems, forecasting patient health trajectories, personalized polygenic risk predictions, characterizing multi-trait functional genetic mutations, and dissecting cell-type-specific regulatory elements that are underpin complex traits and diseases in human. His program covers three main research areas involving applied machine learning in (1) healthcare and public health, (2) computational genomics, and (3) population genetics.",
         image: '/images/speakers/yueli.jpeg',
     },
+    {
+        name: 'Glen Berseth',
+        subheading: 'Developing Robots that Autonomously Learn and Plan in the Real World',
+        description:
+            'Glen Berseth is an assistant professor at the Université de Montréal, a core academic member of the Mila - Quebec AI Institute, Canada CIFAR AI chair, and co-director of the Robotics and Embodied AI Lab (REAL). He was a Postdoctoral Researcher at Berkeley Artificial Intelligence Research (BAIR), working with Sergey Levine. His previous and current research has focused on solving sequential decision-making problems (planning) for real-world autonomous learning systems (robots). The specific of his research has covered the areas of human-robot collaboration, reinforcement, continual-, meta-, multi-agent, and hierarchical learning. Dr. Berseth has published across the top venues in robotics, machine learning, and computer animation in his work. He also teaches a course on robot learning at Université de Montréal and Mila, covering the most recent research on machine learning techniques for creating generalist robots.',
+        eventDescription:
+            "While humans plan and solve tasks with ease, simulated and robotics agents struggle to reproduce the same fidelity, robustness and skill. For example, humans can grow to perform incredible gymnastics, prove that black holes exist, and produce works of art, all starting from the same base learning system. I will present recent work and a roadmap on how to create robotic agents that not only solve many of the tasks we commonly perform but can also be used to help us solve scientific problems we don’t have the answers for. To enable this learning, the agent needs to (1) be able to collect a large amount of experience, (2) train its model to best reuse this experience, and (3) optimize general objectives for understanding, controlling, and changing its environment.",
+        image: '/images/speakers/glen.jpeg',
+    }
 ];
 
 const ReadMore = ({ children }) => {
@@ -166,7 +175,7 @@ export default function Speakers() {
                     </div>
             </div>
             <center>
-                <small>...and many more coming soon!</small>
+                <small>...and more!</small>
             </center>
         </section>
     );
