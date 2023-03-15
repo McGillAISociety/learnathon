@@ -15,8 +15,13 @@ const sponsors = [
     },*/
     {
         name: 'desjardins',
-        url: 'https://www.squarepoint-capital.com/',
+        url: 'https://www.desjardins.com/nb/en/careers.html',
         imgWidth: 300,
+    },
+    {
+        name: 'isaac',
+        url: 'https://www.isaacinstruments.com/careers/#available-positions',
+        imgWidth: 250,
     },
 ];
 
