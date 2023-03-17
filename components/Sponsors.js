@@ -23,6 +23,11 @@ const sponsors = [
         url: 'https://www.isaacinstruments.com/careers/#available-positions',
         imgWidth: 250,
     },
+    {
+        name: 'mtlnewtech',
+        url: 'https://www.montrealnewtech.com',
+        imgWidth: 250,
+    },
 ];
 
 export default function Sponsors() {
