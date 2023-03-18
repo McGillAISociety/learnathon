@@ -10,7 +10,6 @@ export default function Schedule() {
                 <li><strong>1:00 PM- 2:00 PM:</strong> Talk is Not Cheap, Hand Me the Tools: Augmenting Language Models with Tools for More Effective Problem-Solving - Dr. Bang Liu; UdeM</li>
                 <li><strong>2:00 PM- 3:00 PM:</strong> Seeing Us through Machine: Designing and Building AI to Understand Humans - Dr. Ziang Xiao; Microsoft Research, Johns Hopkins</li>
                 <li><strong>3:00 PM- 4:00 PM:</strong> Deep embedded topic model for single-cell genomic data - Dr. Yue Li; McGill, MILA</li>
-                <li><strong>4:00 PM- 5:00 PM:</strong> AI in Industry Panel - with Desjardin, ISAAC, and more!</li>
             </ul>
             
         </section>
