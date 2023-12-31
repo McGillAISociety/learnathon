@@ -19,15 +19,20 @@ const sponsors = [
         imgWidth: 300,
     },
     {
-        name: 'isaac',
-        url: 'https://www.isaacinstruments.com/careers/#available-positions',
-        imgWidth: 250,
+        name: 'tower',
+        url: 'https://www.tower-research.com/open-positions',
+        imgWidth: 270,
     },
-    {
-        name: 'mtlnewtech',
-        url: 'https://www.montrealnewtech.com',
-        imgWidth: 250,
-    },
+    // {
+    //     name: 'isaac',
+    //     url: 'https://www.isaacinstruments.com/careers/#available-positions',
+    //     imgWidth: 250,
+    // },
+    // {
+    //     name: 'mtlnewtech',
+    //     url: 'https://www.montrealnewtech.com',
+    //     imgWidth: 250,
+    // },
 ];
 
 export default function Sponsors() {
