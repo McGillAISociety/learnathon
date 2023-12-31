@@ -7,16 +7,16 @@ const FAQs = [
         answer: 'Everybody! The event is open to everyone interested in learning more about AI. We strongly encourage applicants who identify as Indigenous, Black, Latinx, women/non-binary, queer, disabled, or otherwise underrepresented in tech to attend.',
     },
     {
-        question: 'Is this a virtual event?',
-        answer: "The learnathon will be online again this year. No matter the format, we have a truly incredible slate of programming that you won't want to miss!",
+        question: 'Is this event in person or virtual?',
+        answer: "The Learnathon is now back in person this year! We have a truly incredible program this year that you won't want to miss!",
     },
     {
-        question: 'Does the conference cost money?',
-        answer: 'Nope!',
+        question: 'Do I have to pay to attend the Learnathon?',
+        answer: 'Nope, the Learnathon is completely free to attend. All you need to do is register to confirm your spot!',
     },
     {
         question: 'Do I have to learn anything in advance?',
-        answer: 'Some basic math or computer science background may be useful for our more advanced programming but absolutely is not necessary.',
+        answer: 'Some basic math or computer science background may be useful for our more advanced technical talks and panels but is absolutely not necessary!',
     },
 ];
 
