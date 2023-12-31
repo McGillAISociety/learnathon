@@ -5,6 +5,8 @@ import {
     FaInstagram as Instagram,
     FaLinkedinIn as Linkedin,
     FaTwitter as Twitter,
+    FaDiscord as Discord,
+    FaReddit as Reddit,
     FaGithub as Github,
     FaMediumM as Medium,
 } from 'react-icons/fa';
@@ -37,6 +39,14 @@ const socials = [
         link: 'https://twitter.com/mcgillaisociety',
     },
     {
+        icon: <Discord {...iconProps} />,
+        link: 'https://discord.gg/G42Vm26hgR',
+    },
+    {
+        icon: <Reddit {...iconProps} />,
+        link: 'https://www.reddit.com/user/mcgillAI/',
+    },
+    {
         icon: <Github {...iconProps} />,
         link: 'https://github.com/McGillAISociety',
     },
@@ -62,7 +72,10 @@ export default function Footer() {
                 ))}
             </div>
             <div className="flex-center">
-                <small>© McGill AI Society 2023</small>
+                <small>
+                    © McGill AI Society&nbsp;
+                    {new Date().getFullYear()}
+                </small>
             </div>
         </footer>
     );
