@@ -100,12 +100,30 @@ const speakers = [
     },
     {
         name: 'Liam Paull',
-        subheading: '',
+        subheading: 'Learning World Representations for Robotics',
         description:
             "Liam Paull is an assistant professor at l'Université de Montréal and the head of the Montreal Robotics and Embodied AI Lab (REAL). His lab focuses on robotics problems including building representations of the world (such as for simultaneous localization and mapping), modeling of uncertainty, and building better workflows to teach robotic agents new tasks (such as through simulation or demonstration). He is a co-founder and director of the Duckietown Foundation, which is dedicated to making engaging robotics learning experiences accessible to everyone.",
         eventDescription:
-            'TBD',
+            'One of the central questions for mobile robots is that of constructing a model of the world in which the robot is operating. In this talk, we will discuss this discuss an overview of this fundamental problem, followed by some methods in which state-of-the-art machine learning methods can be used to enhance the richness and usefulness of these representations.',
         image: '/images/speakers/liam.png',
+    },
+    {
+        name: 'David Rolnick',
+        subheading: 'Tackling Climate Change with Machine Learning',
+        description:
+            "David Rolnick is an Assistant Professor and Canada CIFAR AI Chair in the School of Computer Science at McGill University and Mila, and Co-founder and Chair of Climate Change AI. Dr. Rolnick is a former NSF Mathematical Sciences Postdoctoral Research Fellow, NSF Graduate Research Fellow, and Fulbright Scholar, and was named to the MIT Technology Review's 2021 list of '35 Innovators Under 35.'",
+        eventDescription:
+            'Machine learning (ML) can be a useful tool in helping society reduce greenhouse gas emissions and adapt to a changing climate. In this talk, we will explore opportunities and challenges in ML for climate action, from optimizing electrical grids to monitoring crop yield, with an emphasis on how to incorporate domain-specific knowledge into machine learning algorithms. We will also consider ways that ML is used in ways that contribute to climate change, and how to better align the use of ML overall with climate goals.',
+        image: '/images/speakers/david.jpg',
+    },
+    {
+        name: 'Steven Li',
+        subheading: 'Building the Contact Center of the Future',
+        description:
+            "Steven Li is a principal AI engineering developer at the National Bank of Canada. At NBC, he focuses on the application of artificial intelligence in the financial domain to improve and to automate process flows for various departments ranging from contact centers to IT.",
+        eventDescription:
+            'Recent improvements in speech to text, generative AI and natural language processing/understanding have been critical to helping shape the future of contact centers. Join us for a deep dive into the driving factors for employing artificial intelligence in contact centers and what are its benefits.',
+        image: '/images/speakers/steven.JPG',
     },
     // {
     //     name: 'Bang Liu',
