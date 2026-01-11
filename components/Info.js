@@ -41,7 +41,7 @@ export default function Info() {
             <h2>An Undergraduate AI Conference</h2>
             <p>
                 Join some of the most curious students and acclaimed AI
-                researchers in Montreal for an afternoon conference at <b>MILA 
+                researchers in Montreal for a day-long conference at <b>MILA 
                 (Quebec Artificial Intelligence Institute)</b>.
                 The McGill AI Society has organized a series of talks and events
                 open to interested, curious, and ambitious students ranging from
